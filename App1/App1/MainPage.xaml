@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="DeepSkyBlue" Padding="0" CornerRadius="0">
+            
+        </Frame>
+        <Label  Text="FAVOR LLENAR EL SIGUIENTE FORMULARIO" FontSize="Subtitle" FontAttributes="Bold" Padding="30,10,30,10" HorizontalTextAlignment="Center"  />
+        
+        <Label FontSize="16" Padding="0,0,0,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+        <Label  Padding="10,0,0,0" Text="Ingrese Nombres" HorizontalTextAlignment="Start" TextColor="#2196F3"  FontSize="20"/>
+        <Entry x:Name="txtnombre" Keyboard="Text" Placeholder="Maria Rosa" HorizontalTextAlignment="Center"  />
+
+        <Label Padding="10,0,0,0"  Text="Ingrese Apellidos" HorizontalTextAlignment="Start" TextColor="#2196F3"  FontSize="20"/>
+        <Entry x:Name="txtapellido" Keyboard="Text" Placeholder="Alvarado Funez" HorizontalTextAlignment="Center"  />
+
+        <Label Padding="10,0,0,0"  Text="Ingrese Edad" HorizontalTextAlignment="Start" TextColor="#2196F3"  FontSize="20"/>
+        <Entry x:Name="txtedad" Keyboard="Numeric" Placeholder="30 a;os" HorizontalTextAlignment="Center"  />
+
+        <Label Padding="10,0,0,0"  Text="Ingrese E-mail" HorizontalTextAlignment="Start" TextColor="#2196F3"  FontSize="20"/>
+        <Entry x:Name="txtcorreo" Keyboard="Email" Placeholder="annyalvarado10@gmail.com" HorizontalTextAlignment="Center" />
+
+        <Button Text="Enviar"
+        Font="Large"
+        BorderWidth="1"
+        BackgroundColor="DeepSkyBlue"
+        TextColor="Beige"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Clicked="Button_Clicked" />
+
+
+
+    </StackLayout>
+
+</ContentPage>
